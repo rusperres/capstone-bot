@@ -714,6 +714,14 @@ async def show_help(interaction: discord.Interaction):
         )
         
         roles_embed.add_field(
+            name="� Project Manager",
+            value="✓ `/load-tickets` - Load tickets into channels\n" +
+                  "✓ Organize ticket folders\n" +
+                  "✓ Gets Discord `Project Manager` role",
+            inline=True
+        )
+        
+        roles_embed.add_field(
             name="👨‍💻 Developer",
             value="✓ `/claim` - Claim tickets\n" +
                   "✓ `/resolved` - Submit for review\n" +
@@ -734,7 +742,7 @@ async def show_help(interaction: discord.Interaction):
         
         roles_embed.add_field(
             name="🔧 Setup",
-            value="Use `/set-role` to assign yourself a role.\n" +
+            value="Use `/set-role pm` or `/set-role developer` or `/set-role qa`\n" +
                   "The Discord role will be created automatically if needed.",
             inline=False
         )
