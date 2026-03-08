@@ -6,13 +6,12 @@ The assistant module currently relies on a simple provider with static behavior,
 
 ## Potentially Related Files
 
-- [apps/api/src/modules/disaster-response/assistant/assistant.module.ts](../apps/api/src/modules/disaster-response/assistant/assistant.module.ts) - Provider wiring for assistant dependencies.
-- [apps/api/src/modules/disaster-response/assistant/assistant.service.ts](../apps/api/src/modules/disaster-response/assistant/assistant.service.ts) - Main inquiry orchestration.
-- [apps/api/src/modules/disaster-response/assistant/assistant.controller.ts](../apps/api/src/modules/disaster-response/assistant/assistant.controller.ts) - Public assistant endpoint surface.
-- [apps/api/src/modules/disaster-response/assistant/simple-assistant.provider.ts](../apps/api/src/modules/disaster-response/assistant/simple-assistant.provider.ts) - Stub provider to replace.
-- [apps/api/src/config](../apps/api/src/config) - Environment-driven runtime config location for API keys and model settings.
-- [apps/api/.env.example](../apps/api/.env.example) - Environment variable template to extend.
-- [apps/mobile/src/components/screens/LLMAssistant.tsx](../apps/mobile/src/components/screens/LLMAssistant.tsx) - Existing UI consumer of assistant responses.
+- [apps/api/src/modules/disaster-response/assistant/assistant.module.ts](../apps/api/src/modules/disaster-response/assistant/assistant.module.ts) - Provider wiring.
+- [apps/api/src/modules/disaster-response/assistant/assistant.service.ts](../apps/api/src/modules/disaster-response/assistant/assistant.service.ts) - Inquiry orchestration.
+- [apps/api/src/modules/disaster-response/assistant/assistant.controller.ts](../apps/api/src/modules/disaster-response/assistant/assistant.controller.ts) - API entrypoint.
+- [apps/api/src/modules/disaster-response/assistant/simple-assistant.provider.ts](../apps/api/src/modules/disaster-response/assistant/simple-assistant.provider.ts) - Stub to replace.
+- [apps/api/.env.example](../apps/api/.env.example) - LLM env vars.
+- [apps/mobile/src/components/screens/LLMAssistant.tsx](../apps/mobile/src/components/screens/LLMAssistant.tsx) - Client consumer.
 
 ## What to Fix
 

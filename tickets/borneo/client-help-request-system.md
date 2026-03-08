@@ -6,13 +6,12 @@ The backend already has a `help-requests` module, but the mobile side is still m
 
 ## Potentially Related Files
 
-- [apps/mobile/src/components/screens/HelpDashboard.tsx](../apps/mobile/src/components/screens/HelpDashboard.tsx) - Current help dashboard UI shell for requester and volunteer tabs.
-- [apps/mobile/src/components/screens/MapForecast.tsx](../apps/mobile/src/components/screens/MapForecast.tsx) - Source of user location context that can prefill help request coordinates.
-- [apps/mobile/src/components/MainApp.tsx](../apps/mobile/src/components/MainApp.tsx) - Route switch where help flow navigation is mounted.
-- [apps/api/src/modules/disaster-response/help-requests/help-requests.controller.ts](../apps/api/src/modules/disaster-response/help-requests/help-requests.controller.ts) - Existing create/list/claim/status endpoints to wire into UI.
-- [apps/api/src/modules/disaster-response/help-requests/help-requests.service.ts](../apps/api/src/modules/disaster-response/help-requests/help-requests.service.ts) - Business logic for lifecycle and assignment.
-- [apps/api/src/modules/disaster-response/shared/approved-volunteer.guard.ts](../apps/api/src/modules/disaster-response/shared/approved-volunteer.guard.ts) - Volunteer-only enforcement for claims.
-- [packages/api-client/openapi/openapi.json](../packages/api-client/openapi/openapi.json) - API contract source for generated client hooks.
+- [apps/mobile/src/components/screens/HelpDashboard.tsx](../apps/mobile/src/components/screens/HelpDashboard.tsx) - Help UI.
+- [apps/mobile/src/components/screens/MapForecast.tsx](../apps/mobile/src/components/screens/MapForecast.tsx) - Location source.
+- [apps/mobile/src/components/MainApp.tsx](../apps/mobile/src/components/MainApp.tsx) - Navigation mount.
+- [apps/api/src/modules/disaster-response/help-requests/help-requests.controller.ts](../apps/api/src/modules/disaster-response/help-requests/help-requests.controller.ts) - Create/claim/status endpoints.
+- [apps/api/src/modules/disaster-response/help-requests/help-requests.service.ts](../apps/api/src/modules/disaster-response/help-requests/help-requests.service.ts) - Lifecycle logic.
+- [apps/api/src/modules/disaster-response/shared/approved-volunteer.guard.ts](../apps/api/src/modules/disaster-response/shared/approved-volunteer.guard.ts) - Claim authorization.
 
 ## What to Fix
 

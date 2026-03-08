@@ -6,12 +6,11 @@ Volunteer apply/review functionality exists, but it lacks stronger workflow cont
 
 ## Potentially Related Files
 
-- [apps/api/src/modules/disaster-response/volunteers/volunteers.controller.ts](../apps/api/src/modules/disaster-response/volunteers/volunteers.controller.ts) - User-facing apply/status endpoints.
-- [apps/api/src/modules/disaster-response/volunteers/volunteers.service.ts](../apps/api/src/modules/disaster-response/volunteers/volunteers.service.ts) - Volunteer application creation rules.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Admin review endpoint for applications.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Transactional approve/reject logic and decision logging.
-- [apps/admin/src/app/volunteers/components/VolunteerApprovalsPage.tsx](../apps/admin/src/app/volunteers/components/VolunteerApprovalsPage.tsx) - Existing admin review UI.
-- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - VolunteerApplication, VolunteerProfile, VolunteerDecisionLog models.
+- [apps/api/src/modules/disaster-response/volunteers/volunteers.controller.ts](../apps/api/src/modules/disaster-response/volunteers/volunteers.controller.ts) - Apply/status endpoints.
+- [apps/api/src/modules/disaster-response/volunteers/volunteers.service.ts](../apps/api/src/modules/disaster-response/volunteers/volunteers.service.ts) - Apply rules.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Review endpoints.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Review transactions.
+- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - Volunteer models.
 
 ## What to Fix
 

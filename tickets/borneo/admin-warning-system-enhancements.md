@@ -6,13 +6,12 @@ Warning creation exists in admin and warning retrieval exists in API, but user-f
 
 ## Potentially Related Files
 
-- [apps/admin/src/app/warnings/new/components/ManualWarningPage.tsx](../apps/admin/src/app/warnings/new/components/ManualWarningPage.tsx) - Existing multi-step warning compose/confirm UI.
-- [apps/admin/src/app/warnings/new/components/warning-flow.utils.ts](../apps/admin/src/app/warnings/new/components/warning-flow.utils.ts) - Validation and flow helpers used by admin warning creation.
-- [apps/mobile/src/components/screens/Warnings.tsx](../apps/mobile/src/components/screens/Warnings.tsx) - Currently hardcoded warnings list needing API integration.
-- [apps/api/src/modules/disaster-response/warnings/warnings.controller.ts](../apps/api/src/modules/disaster-response/warnings/warnings.controller.ts) - User warning retrieval endpoints.
-- [apps/api/src/modules/disaster-response/warnings/warnings.service.ts](../apps/api/src/modules/disaster-response/warnings/warnings.service.ts) - Warning query rules by user/family/location.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Admin warning creation endpoints.
-- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - WarningEvent and WarningEventLog storage.
+- [apps/admin/src/app/warnings/new/components/ManualWarningPage.tsx](../apps/admin/src/app/warnings/new/components/ManualWarningPage.tsx) - Compose flow.
+- [apps/mobile/src/components/screens/Warnings.tsx](../apps/mobile/src/components/screens/Warnings.tsx) - User warning feed.
+- [apps/api/src/modules/disaster-response/warnings/warnings.controller.ts](../apps/api/src/modules/disaster-response/warnings/warnings.controller.ts) - Read endpoints.
+- [apps/api/src/modules/disaster-response/warnings/warnings.service.ts](../apps/api/src/modules/disaster-response/warnings/warnings.service.ts) - Targeting logic.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Create/update endpoints.
+- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - Warning models.
 
 ## What to Fix
 

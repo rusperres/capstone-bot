@@ -6,12 +6,11 @@ Admins currently lack a way to evaluate population density inside a selected map
 
 ## Potentially Related Files
 
-- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Existing map operations page to host bbox density tools.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Admin endpoint surface to extend for density queries.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Candidate service for density computation orchestration.
-- [apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts](../apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts) - Existing geospatial/weather analysis patterns to reuse.
-- [apps/api/src/modules/disaster-response/shared/geo.util.ts](../apps/api/src/modules/disaster-response/shared/geo.util.ts) - Spatial helper baseline for bbox math.
-- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - `UserLocationSnapshot` and regional snapshots useful for density estimates.
+- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Bbox UI.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Add density endpoint.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Density computation.
+- [apps/api/src/modules/disaster-response/shared/geo.util.ts](../apps/api/src/modules/disaster-response/shared/geo.util.ts) - Bbox math helpers.
+- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - `UserLocationSnapshot` source.
 
 ## What to Fix
 

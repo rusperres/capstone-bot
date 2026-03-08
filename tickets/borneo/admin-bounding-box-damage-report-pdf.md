@@ -6,12 +6,12 @@ Admins need to produce a regional damage report based on an interactively select
 
 ## Potentially Related Files
 
-- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Existing map UI where interactive bounding-box selection can be added.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Existing admin operations surface to extend with report endpoint.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Aggregation orchestration entrypoint candidate.
-- [apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts](../apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts) - Weather and hazard intelligence source.
-- [apps/api/src/modules/disaster-response/shared/geo.util.ts](../apps/api/src/modules/disaster-response/shared/geo.util.ts) - Existing geospatial utility patterns.
-- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - Hazard/help/warning models needed for report aggregation.
+- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Bbox selection UI.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Report endpoint.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Aggregation flow.
+- [apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts](../apps/api/src/modules/disaster-response/risk-intelligence/risk-intelligence.service.ts) - Weather context.
+- [apps/api/src/modules/disaster-response/shared/geo.util.ts](../apps/api/src/modules/disaster-response/shared/geo.util.ts) - Spatial helpers.
+- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - Source models.
 
 ## What to Fix
 

@@ -6,13 +6,12 @@ The data model includes map pin status records and admin can list pin statuses, 
 
 ## Potentially Related Files
 
-- [apps/mobile/src/components/MapComponent.tsx](../apps/mobile/src/components/MapComponent.tsx) - Mobile map where hazard pin submission entry can be triggered.
-- [apps/mobile/src/components/screens/MapForecast.tsx](../apps/mobile/src/components/screens/MapForecast.tsx) - Forecast/map context for pin overlays and location UX.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Existing pin status listing endpoint under admin operations.
-- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Current pin status query logic.
-- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Admin map for reviewing and updating submitted pins.
-- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - `MapPinStatus` model and pin lifecycle fields.
-- [packages/api-client/openapi/openapi.json](../packages/api-client/openapi/openapi.json) - API schema to expose new pin submit/review endpoints.
+- [apps/mobile/src/components/MapComponent.tsx](../apps/mobile/src/components/MapComponent.tsx) - User submit UI.
+- [apps/mobile/src/components/screens/MapForecast.tsx](../apps/mobile/src/components/screens/MapForecast.tsx) - Pin overlay context.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.controller.ts) - Review endpoints.
+- [apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts](../apps/api/src/modules/disaster-response/admin-operations/admin-operations.service.ts) - Review logic.
+- [apps/admin/src/app/map/components/OperationsMapPage.tsx](../apps/admin/src/app/map/components/OperationsMapPage.tsx) - Admin moderation UI.
+- [apps/api/prisma/schema/models/disaster-response.prisma](../apps/api/prisma/schema/models/disaster-response.prisma) - `MapPinStatus` model.
 
 ## What to Fix
 
