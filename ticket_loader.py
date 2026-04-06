@@ -87,7 +87,9 @@ def load_tickets_from_folder(folder_name: str) -> list:
         List of parsed ticket dictionaries
     """
     folder_path = Path(TICKETS_DIR) / folder_name
-    
+    print(f"DEBUG: Looking for: {folder_path.resolve()}")
+    print(f"DEBUG: Exists: {folder_path.exists()}")
+    print(f"DEBUG: tickets_dir contents: {list(Path(TICKETS_DIR).iterdir()) if Path(TICKETS_DIR).exists() else 'TICKETS_DIR not found'}")    
     if not folder_path.exists():
         raise FileNotFoundError(f"Folder '{folder_name}' not found in tickets directory")
     
