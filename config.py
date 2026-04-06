@@ -1,16 +1,19 @@
-"""Configuration module for the Discord bot."""
+"""configuration module for the discord bot."""
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# load environment variables from .env file
 load_dotenv()
 
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+discord_token = os.getenv("discord_token")
 
-if not DISCORD_TOKEN:
-    raise ValueError("DISCORD_TOKEN not found in environment variables. Please set it in .env file.")
+if not discord_token:
+    raise valueerror("discord_token not found in environment variables. please set it in .env file.")
 
-# Bot configuration
-COMMAND_PREFIX = "/"
-DATABASE_FILE = "tickets.db"
-TICKETS_DIR = "tickets"
+# bot configuration
+command_prefix = "/"
+database_file = "tickets.db"
+
+import os
+base_dir = os.path.dirname(os.path.abspath(__file__))
+tickets_dir = os.path.join(base_dir, "tickets")
