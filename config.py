@@ -2,18 +2,14 @@
 import os
 from dotenv import load_dotenv
 
-# load environment variables from .env file
 load_dotenv()
 
-discord_token = os.getenv("discord_token")
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+if not DISCORD_TOKEN:
+    raise ValueError("DISCORD_TOKEN not found in environment variables.")
 
-if not discord_token:
-    raise valueerror("discord_token not found in environment variables. please set it in .env file.")
-
-# bot configuration
 command_prefix = "/"
 database_file = "tickets.db"
 
-import os
 base_dir = os.path.dirname(os.path.abspath(__file__))
-tickets_dir = os.path.join(base_dir, "tickets")
+TICKETS_DIR = os.path.join(base_dir, "tickets")
