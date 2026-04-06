@@ -2,7 +2,8 @@
 import os
 import re
 from pathlib import Path
-from config import TICKETS_DIR
+from config import tickets_dir as TICKETS_DIR
+
 
 
 def parse_ticket_markdown(file_path: str) -> dict:
